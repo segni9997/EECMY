@@ -1,4 +1,3 @@
-"use client"
 
 import { useState } from "react"
 import { useAuth } from "../context/AuthContext"
@@ -74,7 +73,7 @@ export default function LoginPage() {
           {error && <div className="error-message">{error}</div>}
 
           <button type="submit" disabled={isLoading} className="login-btn">
-            {isLoading ? "Loading..." : t("save") || "Login"}
+            {isLoading ? "Loading..." : t("login") || "Login"}
           </button>
         </form>
 
