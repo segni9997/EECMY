@@ -1,0 +1,65 @@
+/* Updated announcement card hover effects */
+.announcements-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.announcements-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.announcements-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.announcements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.announcement-card {
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.announcement-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--primary-light);
+  background: linear-gradient(135deg, rgba(13, 119, 101, 0.02) 0%, rgba(6, 182, 212, 0.02) 100%);
+}
+
+.announcement-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+.announcement-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.announcement-card:hover h3 {
+  color: var(--primary);
+}
+
+.announcement-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

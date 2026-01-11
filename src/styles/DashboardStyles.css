@@ -1,0 +1,437 @@
+.dashboard-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.dashboard-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Added view toggle buttons for dashboard modes */
+.view-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #666;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+  border-color: #0f766e;
+  color: #0f766e;
+}
+
+.toggle-btn.active {
+  background: #0f766e;
+  color: white;
+  border-color: #0f766e;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Added income and expense sections */
+.income-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.income-section h2,
+.expense-section h2,
+.summary-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.income-grid,
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.income-card,
+.expense-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.income-card:hover,
+.expense-card:hover {
+  border-color: #0f766e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+}
+
+.income-label,
+.expense-label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.income-amount,
+.expense-amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.income-card .income-amount {
+  color: #0f766e;
+}
+
+.expense-card .expense-amount {
+  color: #ef4444;
+}
+
+.income-percentage,
+.expense-percentage {
+  font-size: 12px;
+  color: #999;
+}
+
+.expense-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  margin-top: 20px;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Added summary section for financial overview */
+.summary-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  margin-top: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.summary-card {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.summary-card.total-income {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border: 1px solid #86efac;
+}
+
+.summary-card.total-expense {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border: 1px solid #fca5a5;
+}
+
+.summary-card.balance {
+  border: 1px solid #e5e7eb;
+}
+
+.summary-card.balance.positive {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%);
+  border: 1px solid #86efac;
+}
+
+.summary-card.balance.negative {
+  background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+  border: 1px solid #fca5a5;
+}
+
+.summary-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+.summary-card.total-income .summary-value {
+  color: #16a34a;
+}
+
+.summary-card.total-expense .summary-value {
+  color: #dc2626;
+}
+
+.summary-card.balance.positive .summary-value {
+  color: #16a34a;
+}
+
+.summary-card.balance.negative .summary-value {
+  color: #dc2626;
+}
+
+.activity-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  margin-top: 20px;
+}
+
+.activity-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+/* Added detailed report styles */
+.detailed-report {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.report-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.report-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.member-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detailed-table,
+.assets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detailed-table thead,
+.assets-table thead {
+  background: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.detailed-table th,
+.assets-table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detailed-table tbody tr,
+.assets-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.detailed-table tbody tr:hover,
+.assets-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.detailed-table td,
+.assets-table td {
+  padding: 12px;
+  font-size: 13px;
+  color: #111;
+}
+
+.income-row {
+  background: #f0fdf4;
+}
+
+.expense-row {
+  background: #fef2f2;
+}
+
+.balance-row {
+  background: #f0fdf4;
+  font-weight: 600;
+}
+
+.label-bold {
+  font-weight: 700;
+  color: #111;
+}
+
+.value-bold {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-badge.income {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.expense {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.balance {
+  background: #dbeafe;
+  color: #0284c7;
+}
+
+.status-label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-label.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-label.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-label.maintenance {
+  background: #fef08a;
+  color: #854d0e;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-toggle {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .income-grid,
+  .expense-grid,
+  .summary-grid,
+  .member-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailed-table,
+  .assets-table {
+    font-size: 12px;
+  }
+
+  .detailed-table th,
+  .assets-table th,
+  .detailed-table td,
+  .assets-table td {
+    padding: 8px;
+  }
+}
