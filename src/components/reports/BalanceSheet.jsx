@@ -34,7 +34,7 @@ export default function BalanceSheet({ data, sectors }) {
           </tr>
           <tr>
             <td className="indent">Income</td>
-            <td>${income.toLocaleString()}</td>
+            <td>Birr {income.toLocaleString()}</td>
           </tr>
           <tr>
             <td className="indent">Expenses</td>

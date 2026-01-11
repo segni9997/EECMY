@@ -42,7 +42,7 @@ export default function AssetManagement() {
     { key: "name", label: "Asset Name" },
     { key: "category", label: "Category" },
     { key: "church", label: "Church/Location" },
-    { key: "value", label: "Value", format: (val) => `$${val.toLocaleString()}` },
+    { key: "value", label: "Value", format: (val) => `Birr ${val.toLocaleString()}` },
     { key: "purchaseDate", label: "Purchase Date" },
     { key: "status", label: "Status" },
   ]
@@ -90,7 +90,7 @@ export default function AssetManagement() {
           <option value="Other">Other</option>
         </select>
         <div className="filter-summary">
-          Total Asset Value: <strong>${totalValue.toLocaleString()}</strong>
+          Total Asset Value: <strong>Birr {totalValue.toLocaleString()}</strong>
         </div>
       </div>
 

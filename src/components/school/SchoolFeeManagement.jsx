@@ -24,7 +24,7 @@ export default function SchoolFeeManagement() {
 
   const columns = [
     { key: "studentId", label: "Student ID" },
-    { key: "amount", label: "Amount", format: (val) => `$${val}` },
+    { key: "amount", label: "Amount", format: (val) => `Birr ${val}` },
     { key: "month", label: "Month" },
     { key: "date", label: "Date" },
     { key: "status", label: "Status" },
@@ -42,11 +42,11 @@ export default function SchoolFeeManagement() {
       <div className="ledger-summary">
         <div className="summary-card">
           <span className="summary-label">Collected</span>
-          <span className="summary-value income">${totalCollected.toLocaleString()}</span>
+          <span className="summary-value income">Birr {totalCollected.toLocaleString()}</span>
         </div>
         <div className="summary-card">
           <span className="summary-label">Unpaid</span>
-          <span className="summary-value expense">${totalUnpaid.toLocaleString()}</span>
+          <span className="summary-value expense">Birr {totalUnpaid.toLocaleString()}</span>
         </div>
       </div>
 

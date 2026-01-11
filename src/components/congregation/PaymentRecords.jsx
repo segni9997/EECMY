@@ -32,7 +32,7 @@ export default function PaymentRecords() {
 
   const columns = [
     { key: "category", label: "Category" },
-    { key: "amount", label: "Amount", format: (val) => `$${val}` },
+    { key: "amount", label: "Amount", format: (val) => `Birr ${val}` },
     { key: "type", label: "Type" },
     { key: "expenseType", label: "Classification" },
     { key: "date", label: "Date" },
@@ -71,7 +71,7 @@ export default function PaymentRecords() {
             Income: <strong className="income">${totalIncome.toLocaleString()}</strong>
           </span>
           <span>
-            Expenses: <strong className="expense">${totalExpense.toLocaleString()}</strong>
+            Expenses: <strong className="expense">Birr {totalExpense.toLocaleString()}</strong>
           </span>
           <span>
             Balance: <strong className="balance">${(totalIncome - totalExpense).toLocaleString()}</strong>

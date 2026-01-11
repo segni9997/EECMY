@@ -20,7 +20,7 @@ export default function DevelopmentDashboard() {
       <div className="stats-grid">
         <StatCard label="Employees" value={devEmployees} icon="👥" color="#2563eb" />
         <StatCard label="Total Income" value={`$${devIncome.toLocaleString()}`} icon="💰" color="#10b981" />
-        <StatCard label="Total Expenses" value={`$${devExpenses.toLocaleString()}`} icon="📤" color="#ef4444" />
+        <StatCard label="Total Expenses" value={`Birr ${devExpenses.toLocaleString()}`} icon="📤" color="#ef4444" />
         <StatCard label="Balance" value={`$${(devIncome - devExpenses).toLocaleString()}`} icon="📊" color="#f59e0b" />
       </div>
     </div>

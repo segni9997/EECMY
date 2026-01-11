@@ -37,15 +37,15 @@ export default function GeneralLedger() {
       <div className="ledger-summary">
         <div className="summary-card">
           <span className="summary-label">Total Income</span>
-          <span className="summary-value income">${totalIncome.toLocaleString()}</span>
+          <span className="summary-value income">Birr {totalIncome.toLocaleString()}</span>
         </div>
         <div className="summary-card">
           <span className="summary-label">Total Expenses</span>
-          <span className="summary-value expense">${totalExpenses.toLocaleString()}</span>
+          <span className="summary-value expense">Birr {totalExpenses.toLocaleString()}</span>
         </div>
         <div className="summary-card">
           <span className="summary-label">Net Balance</span>
-          <span className="summary-value">${(totalIncome - totalExpenses).toLocaleString()}</span>
+          <span className="summary-value">Birr {(totalIncome - totalExpenses).toLocaleString()}</span>
         </div>
       </div>
 

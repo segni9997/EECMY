@@ -75,7 +75,7 @@ function TrialBalance({ data, sectors }) {
             <td>Income</td>
             <td>-</td>
             <td>
-              $
+              Birr 
               {data.transactions
                 .filter((t) => t.type === "income")
                 .reduce((sum, t) => sum + t.amount, 0)
@@ -85,7 +85,7 @@ function TrialBalance({ data, sectors }) {
           <tr>
             <td>Expenses</td>
             <td>
-              $
+              Birr 
               {data.transactions
                 .filter((t) => t.type === "expense")
                 .reduce((sum, t) => sum + t.amount, 0)

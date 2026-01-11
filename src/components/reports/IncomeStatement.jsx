@@ -36,7 +36,7 @@ export default function IncomeStatement({ data, sectors }) {
           </tr>
           <tr>
             <td className="indent">Total Expenses</td>
-            <td>-${expenses.toLocaleString()}</td>
+            <td>-Birr {expenses.toLocaleString()}</td>
           </tr>
           <tr className="total-row">
             <td>

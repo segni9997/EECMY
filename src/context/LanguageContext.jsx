@@ -151,7 +151,7 @@ const translations = {
     totalAssetValue: "Total Asset Value",
     editAsset: "Edit Asset",
     addNewAsset: "Add New Asset",
-    assetValue: "Value ($)",
+    assetValue: "Value (Birr)",
     detailedLocation: "Detailed Location",
     maintenance: "Maintenance",
 
@@ -396,7 +396,7 @@ const translations = {
     totalAssetValue: "ጠቅላላ ንብረት ዋጋ",
     editAsset: "ንብረት ያርትዑ",
     addNewAsset: "አዲስ ንብረት ጨምር",
-    assetValue: "ዋጋ ($)",
+    assetValue: "ዋጋ (Birr)",
     detailedLocation: "ዝርዝር ቦታ",
     maintenance: "ጥገና",
 
@@ -644,7 +644,7 @@ const translations = {
     totalAssetValue: "Waliigala Gatii Qabeenya",
     editAsset: "Qabeenya Sesuun",
     addNewAsset: "Qabeenya Baraa Dabaluu",
-    assetValue: "Gatii ($)",
+    assetValue: "Gatii (Birr)",
     detailedLocation: "Bakka Shallagaa",
     maintenance: "Miidhaasan",
 

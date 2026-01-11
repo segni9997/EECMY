@@ -102,7 +102,7 @@ export default function CongregationDashboard() {
             <div className="income-grid">
               <div className="income-card">
                 <div className="income-label">Asrat (Member Dues)</div>
-                <div className="income-amount">${asratIncome.toLocaleString()}</div>
+                <div className="income-amount">Birr {asratIncome.toLocaleString()}</div>
                 <div className="income-percentage">{((asratIncome / totalIncome) * 100).toFixed(1)}% of total</div>
               </div>
               <div className="income-card">
@@ -112,7 +112,7 @@ export default function CongregationDashboard() {
               </div>
               <div className="income-card">
                 <div className="income-label">Gifts & Donations</div>
-                <div className="income-amount">${giftsIncome.toLocaleString()}</div>
+                <div className="income-amount">Birr {giftsIncome.toLocaleString()}</div>
                 <div className="income-percentage">{((giftsIncome / totalIncome) * 100).toFixed(1)}% of total</div>
               </div>
               <div className="income-card">
@@ -128,7 +128,7 @@ export default function CongregationDashboard() {
             <div className="expense-grid">
               <div className="expense-card">
                 <div className="expense-label">{t('churchOperations')}</div>
-                <div className="expense-amount">${churchExpenses.toLocaleString()}</div>
+                <div className="expense-amount">Birr {churchExpenses.toLocaleString()}</div>
                 <div className="expense-percentage">
                   {((churchExpenses / totalExpenses) * 100).toFixed(1)}% of total
                 </div>
@@ -148,7 +148,7 @@ export default function CongregationDashboard() {
             <div className="summary-grid">
               <div className="summary-card total-income">
                 <div className="summary-label">{t('totalIncome')}</div>
-                <div className="summary-value">${totalIncome.toLocaleString()}</div>
+                <div className="summary-value">Birr {totalIncome.toLocaleString()}</div>
               </div>
               <div className="summary-card total-expense">
                 <div className="summary-label">{t('totalExpenses')}</div>
@@ -156,7 +156,7 @@ export default function CongregationDashboard() {
               </div>
               <div className={`summary-card balance ${totalIncome - totalExpenses >= 0 ? "positive" : "negative"}`}>
                 <div className="summary-label">{t('netBalance')}</div>
-                <div className="summary-value">${(totalIncome - totalExpenses).toLocaleString()}</div>
+                <div className="summary-value">Birr {(totalIncome - totalExpenses).toLocaleString()}</div>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function CongregationDashboard() {
                 <div className="stat-label">{t('activeRate')}</div>
               </div>
               <div className="stat-box">
-                <div className="stat-number">${(totalIncome / totalMembers).toFixed(2)}</div>
+                <div className="stat-number">Birr {(totalIncome / totalMembers).toFixed(2)}</div>
                 <div className="stat-label">{t('avgIncomePerMember')}</div>
               </div>
             </div>
@@ -208,25 +208,25 @@ export default function CongregationDashboard() {
                 </tr>
                 <tr className="income-row">
                   <td>{t('mebaIncome')}</td>
-                  <td>${mebaIncome.toLocaleString()}</td>
+                  <td>Birr {mebaIncome.toLocaleString()}</td>
                   <td>{((mebaIncome / totalIncome) * 100).toFixed(1)}%</td>
                   <td className="status-badge income">+</td>
                 </tr>
                 <tr className="income-row">
                   <td>{t('giftsAndDonations')}</td>
-                  <td>${giftsIncome.toLocaleString()}</td>
+                  <td>Birr {giftsIncome.toLocaleString()}</td>
                   <td>{((giftsIncome / totalIncome) * 100).toFixed(1)}%</td>
                   <td className="status-badge income">+</td>
                 </tr>
                 <tr className="income-row">
                   <td>{t('commercialRentsIncome')}</td>
-                  <td>${commercialIncome.toLocaleString()}</td>
+                  <td>Birr {commercialIncome.toLocaleString()}</td>
                   <td>{((commercialIncome / totalIncome) * 100).toFixed(1)}%</td>
                   <td className="status-badge income">+</td>
                 </tr>
                 <tr className="expense-row">
                   <td>Church Expenses</td>
-                  <td>${churchExpenses.toLocaleString()}</td>
+                  <td>Birr {churchExpenses.toLocaleString()}</td>
                   <td>{((churchExpenses / totalExpenses) * 100).toFixed(1)}%</td>
                   <td className="status-badge expense">−</td>
                 </tr>
